@@ -3,6 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: black;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h2 {
+            font-size: 24px;
+            color: #c79900;
+        }
+
+
+
+    </style>
 </head>
 <body>
     <!--Home section-->
@@ -27,15 +66,21 @@
     </header>
 
     <main id="Home">
-        <div>
-            <h3>Hi, There!</h3>
-            <h1>I'm Oshadhi Vimarsha</h1>
-            <p>I'm a UI/UX Designer</p>
+        <div class="detail">
+            <h3>Hi, There!</h3> <br>
+            <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
+            <h4>I'm a UI/UX Designer</h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis cupiditate mollitia nesciunt odio voluptatem! Aperiam at ex facere iusto, obcaecati omnis quod. Accusantium animi dolor eius, iusto temporibus voluptatibus?
+            </p>
+
         </div>
 
         <!--my img-->
-        <div>
-            <img src="assests/images/myImage.png" title="my image" alt="my image" width="500">
+        <div class="images">
+            <img src="assests/images/back1.png" title="back" alt="back" class="shape">
+            <img src="assests/images/myImage.png" title="my image" alt="my image" width="500px" class="girl">
         </div>
     </main>
 
