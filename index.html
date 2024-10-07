@@ -10,7 +10,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: "Philosopher", sans-serif;
+            font-style: normal;
         }
 
         /* Header */
@@ -19,13 +20,29 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: black;
+           /* background-color: black;*/
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+            background-color: #171616;
+            width: 100%;
+            height: 75px;
+            position: fixed;
+            top: 0;
         }
 
         header>div {
             display: flex;
             align-items: center;
+            color: #c79900;
+        }
+
+        header>nav {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
         }
 
         header>img {
@@ -39,10 +56,15 @@
             color: #c79900;
         }
 
-        nav>ul {
-            list-style-type: none;
+        header>nav>ul>li{
+            display: inline;
+            margin: 0px 15px;
+        }
+
+        header>nav>ul {
+            /*list-style-type: none;
             display: flex;
-            gap: 40px;
+            gap: 40px;*/
         }
 
         nav>ul>li>a {
@@ -58,19 +80,20 @@
         }
 
         /* Main Section */
-        .detail {
+        /*.detail {
             position: absolute;
-            bottom: 500px;
-            right: 45%;
+            bottom: 100px;
+            right: 30%;
 
-        }
+        }*/
 
-        main {
-            display: flex;
+        main#Home{
             justify-content: space-between;
             align-items: center;
-            padding: 200px;
+            padding: 365px;
             background-color: black;
+            height: fit-content;
+            top: 0;
         }
 
         main>div:first-child {
@@ -78,37 +101,45 @@
         }
 
         main h3 {
-            font-size: 28px;
+            font-size: 38px;
             color: white;
         }
 
         main h1 {
-            font-size: 48px;
+            font-size: 72px;
             color: white;
         }
 
         main h4 {
-            font-size: 24px;
+            font-size: 54px;
             color: white;
         }
 
         main p {
             font-size: 24px;
+            font-style: oblique;
             color: white;
             position: relative;
-            right: -200px;
-            bottom: -100px;
-
+            right: 0;
+            bottom: -50px;
+            font-family: "Bodoni MT";
         }
 
         span {
             color: #c79900;
         }
 
+        .detail {
+            position: absolute;
+            bottom: 250px;
+            left: 100px;
+        }
+
         main>img {
-            width: 500px;
-            position: relative;
+            width: 300px;
+            position: absolute;
             right: -300px;
+            display: inline;
         }
 
         main>img:nth-last-child {
@@ -127,9 +158,9 @@
         }*/
 
         .girl {
-            width: 650px;
+            width: 600px;
             position: absolute;
-            bottom: 140px;
+            bottom: 0;
             right: 10px;
         }
 
@@ -144,301 +175,316 @@
             width: 900px;
             position: absolute;
             right: 1450px;
-            bottom: 0;
+            bottom: -4%;
         }
 
-        .social-media>div {
+        .social-media {
             position: absolute;
-            right: 1000px;
-            bottom: 200px;
-            border-radius: 50%;
-            border: #c79900;
+            right: 950px;
+            bottom: 50px;
         }
+
+        .experience {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #c79900;
+            color: white;
+            text-align: center;
+            position: absolute;
+            right: 1135px;
+            bottom: 5%;
+        }
+
+        .technologies {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #c79900;
+            color: white;
+            text-align: center;
+            position: absolute;
+            right: 900px;
+            bottom: 5%;
+        }
+
+        .project {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #c79900;
+            color: white;
+            text-align: center;
+            position: absolute;
+            right: 665px;
+            bottom: 5%;
+        }
+
+        .commit {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #c79900;
+            color: white;
+            text-align: center;
+            position: absolute;
+            right: 430px;
+            bottom: 5%;
+        }
+
 
     </style>
 </head>
 <body>
-    <!--Home section-->
-    <header>
-        <!--logo-->
-        <div>
-            <img src="assests/icon/logo.png" alt="logo">
-            <h2>Oshi</h2>
-        </div>
+<!--Home section-->
+<header>
+    <!--logo-->
+    <div>
+        <!--<img src="assests/icon/logo.png" alt="logo" width="300px">-->
+        <h2>Oshi</h2>
+    </div>
 
-        <!--Navigation bar-->
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Service">Service</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Activity">Activity</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!--Navigation bar-->
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#Activity">Activity</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main id="Home">
-        <div class="detail">
-            <h3>Hi, There!</h3> <br>
-            <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
-            <h4>I'm a UI/UX Designer</h4>
+<main id="Home">
+    <div class="detail">
+        <h3>Hi, There!</h3> <br>
+        <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
+        <h4>I'm a <span>UI/UX Designer</span></h4>
 
+        <p>
+            This is my official portfolio website to showes all details and work experience web development.
+            I excel at crafting elegant digital experience and,
+            I am proficient in various programming languages and technologies.
+        </p>
+    </div>
+
+    <!--my img-->
+    <div class="images">
+        <img src="assests/images/myImage.png" title="my image" alt="my image" class="girl">
+    </div>
+
+    <div class="social-media">
+        <img src="assests/icon/email.png" alt="email" title="email" class="email" width="50px">
+        <img src="assests/icon/facebook.png" alt="facebook" title="facebook" class="facebook" width="50px">
+        <img src="assests/icon/instagram.png" alt="instagram" title="instagram" class="instagram" width="50px">
+        <img src="assests/icon/github.png" alt="github" title="github" class="github" width="50px">
+        <img src="assests/icon/linkedin.png" alt="linkedin" title="linkedin" class="linkedin" width="50px">
+    </div>
+
+    <!--<div class="">
+        <div class="experience">01 Years of Experience</div>
+        <div class="technologies">03 Technologies</div>
+        <div class="project">02 Projects</div>
+        <div class="commit">91 Total Commit</div>
+    </div>-->
+</main>
+
+<!--About section-->
+<main id="About">
+    <h1>About Me</h1>
+    <!--Image-->
+    <section>
+        <img src="assests/images/aboutMeImg.png" title="AboutPic" alt="AboutPic" width="400">
+
+        <!--About me-->
+        <div class="about-para">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis cupiditate mollitia nesciunt odio voluptatem! Aperiam at ex facere iusto, obcaecati omnis quod. Accusantium animi dolor eius, iusto temporibus voluptatibus?
-            </p>
-
-        </div>
-
-        <!--my img-->
-        <div class="images">
-            <img src="assests/images/back1.png" title="back" alt="back" class="shape">
-            <img src="assests/images/myImage.png" title="my image" alt="my image" width="500px" class="girl">
-            <img src="assests/images/back2.png" title="back2" alt="back2" class="shape2">
-        </div>
-
-        <div class="social-media">
-            <div>
-
-            </div>
-            <img src="assests/icon/email.png" alt="email" title="email" class="email" width="75px">
-            <img src="assests/icon/facebook.png" alt="facebook" title="facebook" class="facebook" width="75px">
-            <img src="assests/icon/instagram.png" alt="instagram" title="instagram" class="instagram" width="75px">
-            <img src="assests/icon/github.png" alt="github" title="github" class="github" width="75px">
-            <img src="assests/icon/linkedin.png" alt="linkedin" title="linkedin" class="linkedin" width="75px">
-        </div>
-    </main>
-
-    <!--About section-->
-    <main id="About">
-        <h1>About Me</h1>
-        <!--Image-->
-        <section>
-            <img src="assests/images/aboutMeImg.png" title="AboutPic" alt="AboutPic" width="400">
-
-            <!--About me-->
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi delectus distinctio doloribus eligendi esse excepturi fugiat id illo in, ipsam molestiae mollitia neque porro quia quos similique soluta voluptatem.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum deleniti dignissimos esse, ex fuga fugit illo inventore, iste magnam magni, nihil non quod recusandae reprehenderit saepe vitae voluptatibus voluptatum.
-                </p>
-            </div>
-
-            <!--Download CV button-->
-            <div>
-                <button>Download CV</button>
-            </div>
-        </section>
-
-        <section id="Education">
-            <h3>Education</h3>
-
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
-                </p>
-            </div>
-        </section>
-
-        <section id="Experience">
-            <h3>Experience</h3>
-
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
-                </p>
-            </div>
-        </section>
-
-        <section id="Skills">
-            <div>
-                <a href="">Java</a> <br> <br>
-                <a href="">MySQL</a> <br> <br>
-                <a href="">HTML</a> <br> <br>
-                <a href="">CSS</a> <br> <br>
-                <a href="">Javascript</a> <br> <br>
-            </div>
-
-            <div>
-                <a href="">Creativity</a> <br> <br>
-                <a href="">Commiunication</a> <br> <br>
-                <a href="">Problrm Solving</a> <br> <br>
-                <a href="">Team Work</a> <br> <br>
-            </div>
-        </section>
-    </main>
-
-    <!--Service Page-->
-    <main id="Service">
-        <div>
-            <h3>01.Web Development</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi delectus distinctio doloribus eligendi esse excepturi fugiat id illo in, ipsam molestiae mollitia neque porro quia quos similique soluta voluptatem.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum deleniti dignissimos esse, ex fuga fugit illo inventore, iste magnam magni, nihil non quod recusandae reprehenderit saepe vitae voluptatibus voluptatum.
             </p>
         </div>
 
+        <!--Download CV button-->
         <div>
-            <h3>02.Web Development</h3>
+            <button>Download CV</button>
+        </div>
+    </section>
+
+    <section id="Education">
+        <h3>Education</h3>
+
+        <div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
+            </p>
+        </div>
+    </section>
+
+    <section id="Experience">
+        <h3>Experience</h3>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum deserunt dolores expedita fuga molestias nesciunt perspiciatis quae quia, quibusdam rerum, sunt unde voluptas. A aliquam amet corporis quasi similique.
+            </p>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div>
+            <a href="">Java</a> <br> <br>
+            <a href="">MySQL</a> <br> <br>
+            <a href="">HTML</a> <br> <br>
+            <a href="">CSS</a> <br> <br>
+            <a href="">Javascript</a> <br> <br>
+        </div>
+
+        <div>
+            <a href="">Creativity</a> <br> <br>
+            <a href="">Commiunication</a> <br> <br>
+            <a href="">Problrm Solving</a> <br> <br>
+            <a href="">Team Work</a> <br> <br>
+        </div>
+    </section>
+</main>
+
+<!--Service Page-->
+<main id="Service">
+    <div>
+        <h3>01.Web Development</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+        </p>
+    </div>
+
+    <div>
+        <h3>02.Web Development</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+        </p>
+    </div>
+
+    <div>
+        <h3>03.Web Development</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+        </p>
+    </div>
+
+    <div>
+        <h3>04.Web Development</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+        </p>
+    </div>
+</main>
+
+<!--Work Page-->
+<main id="Work">
+    <div>
+        <h1>My Work</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur, atque deserunt ea eaque esse maxime necessitatibus neque nihil nisi numquam optio provident quae quidem, similique unde veritatis voluptates?
+        </p>
+
+        <a href="project.html">Project</a>
+        <a href="assignment.html">Assignment</a>
+    </div>
+
+    <!--Project Section-->
+    <section>
+        <div>
+            <img src="assests/images/project.jpeg" alt="project image" width="500px"> <br>
+            <label>HTML</label>
+            <label>CSS</label>
+            <p>2020</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
             </p>
         </div>
 
         <div>
-            <h3>03.Web Development</h3>
+            <img src="assests/images/project.jpeg" alt="project image" width="500"> <br>
+            <label>HTML</label>
+            <label>CSS</label>
+            <p>2020</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
             </p>
         </div>
 
         <div>
-            <h3>04.Web Development</h3>
+            <img src="assests/images/project.jpeg" alt="project image" width="500px"> <br>
+            <label>HTML</label>
+            <label>CSS</label>
+            <p>2020</p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque eaque eligendi est illum natus nesciunt optio similique veritatis vero. Dicta ex impedit in itaque libero officiis perferendis placeat provident.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
             </p>
         </div>
-    </main>
+    </section>
 
-    <!--Work Page-->
-    <main id="Work">
+</main>
+
+<!--Activity Page-->
+<main id="Activity">
+    <h1>My Activity</h1>
+    <div>
+        <img src="assests/images/img1.jpeg" alt="photo1">
+        <img src="assests/images/img2.jpeg" alt="photo2">
+        <img src="assests/images/img3.jpeg" alt="photo3">
+        <img src="assests/images/img4.jpeg" alt="photo4">
+        <img src="assests/images/img5.jpeg" alt="photo5">
+        <img src="assests/images/img6.jpeg" alt="photo6">
+        <img src="assests/images/img7.jpg" alt="photo7">
+    </div>
+</main>
+
+<!--Contact Page-->
+<main id="Contact">
+    <section>
         <div>
-            <h1>My Work</h1>
+            <h1>Contact</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur, atque deserunt ea eaque esse maxime necessitatibus neque nihil nisi numquam optio provident quae quidem, similique unde veritatis voluptates?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum magnam maxime porro quo, totam veritatis voluptatibus. Animi aut beatae excepturi iste minus nemo nesciunt non, perferendis quis recusandae saepe sint!
+            </p>
+        </div>
+
+        <div>
+            <h3>Let's get in touch </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis cumque excepturi illo, labore minus nemo, nihil quia quibusdam quidem sed, voluptatem voluptatum. Adipisci beatae illum minus perferendis qui similique?
+            </p>
+            <img src="assests/icon/address.png" alt="address">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
             </p>
 
-            <a href="project.html">Project</a>
-            <a href="assignment.html">Assignment</a>
-        </div>
+            <img src="assests/icon/email.png" alt="email">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
+            </p>
 
-        <!--Project Section-->
-        <section>
-            <div>
-                <img src="assests/images/project.jpeg" alt="project image" width="500px"> <br>
-                <label>HTML</label>
-                <label>CSS</label>
-                <p>2020</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
-                </p>
-            </div>
+            <img src="assests/icon/phone.png" alt="phone">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
+            </p>
 
-            <div>
-                <img src="assests/images/project.jpeg" alt="project image" width="500"> <br>
-                <label>HTML</label>
-                <label>CSS</label>
-                <p>2020</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
-                </p>
-            </div>
-
-            <div>
-                <img src="assests/images/project.jpeg" alt="project image" width="500px"> <br>
-                <label>HTML</label>
-                <label>CSS</label>
-                <p>2020</p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dignissimos dolorem doloremque eum exercitationem ipsam nobis officiis, omnis perspiciatis quidem, quod repudiandae saepe sequi suscipit unde ut? Laborum, sit!
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <!--Activity Page-->
-    <main id="Activity">
-        <h1>My Activity</h1>
-        <div>
-            <img src="assests/images/img1.jpeg" alt="photo1">
-            <img src="assests/images/img2.jpeg" alt="photo2">
-            <img src="assests/images/img3.jpeg" alt="photo3">
-            <img src="assests/images/img4.jpeg" alt="photo4">
-            <img src="assests/images/img5.jpeg" alt="photo5">
-            <img src="assests/images/img6.jpeg" alt="photo6">
-            <img src="assests/images/img7.jpg" alt="photo7">
-        </div>
-    </main>
-
-    <!--Contact Page-->
-    <main id="Contact">
-        <section>
-            <div>
-                <h1>Contact</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum magnam maxime porro quo, totam veritatis voluptatibus. Animi aut beatae excepturi iste minus nemo nesciunt non, perferendis quis recusandae saepe sint!
-                </p>
-            </div>
-
-            <div>
-                <h3>Let's get in touch </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis cumque excepturi illo, labore minus nemo, nihil quia quibusdam quidem sed, voluptatem voluptatum. Adipisci beatae illum minus perferendis qui similique?
-                </p>
-                <img src="assests/icon/address.png" alt="address">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
-                </p>
-
-                <img src="assests/icon/email.png" alt="email">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
-                </p>
-
-                <img src="assests/icon/phone.png" alt="phone">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis dignissimos id libero modi perferendis quae repellat rerum saepe sunt. Aliquam architecto cupiditate error et, iste nostrum nulla quo ratione!
-                </p>
-
-                <h4>Contact Me</h4>
-                <img src="assests/icon/facebook.png" alt="facebook">
-                <img src="assests/icon/gmail.png" alt="gmail">
-                <img src="assests/icon/instagram.png" alt="instagram">
-                <img src="assests/icon/github.png" alt="github">
-                <img src="assests/icon/linkedin.png" alt="linkedin">
-            </div>
-
-            <form action="">
-                <div>
-                    <input type="text" name="userName" id="Name" placeholder="User Name"> <br> <br>
-                    <input type="text" name="email" id="Email" placeholder="Email"> <br> <br>
-                    <input type="text" name="phone" id="Phone" placeholder="Phone"> <br> <br>
-                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea> <br> <br>
-                    <div>
-                        <button>Submit</button>
-                    </div>
-                </div>
-            </form>
-
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <img src="assests/images/myImage.png" alt="MyImg" width="300px"> <br>
-            <img src="assests/icon/logo.png" alt="logo">
-            <h2>Oshi</h2>
-        </div>
-
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Service">Service</a>
-            <a href="#Work">Work</a>
-            <a href="#Activity">Activity</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-
-        <div>
+            <h4>Contact Me</h4>
             <img src="assests/icon/facebook.png" alt="facebook">
             <img src="assests/icon/gmail.png" alt="gmail">
             <img src="assests/icon/instagram.png" alt="instagram">
@@ -446,8 +492,47 @@
             <img src="assests/icon/linkedin.png" alt="linkedin">
         </div>
 
-        <label><h3>Elevating the Digital Experience!</h3></label>
-    </footer>
+        <form action="">
+            <div>
+                <input type="text" name="userName" id="Name" placeholder="User Name"> <br> <br>
+                <input type="text" name="email" id="Email" placeholder="Email"> <br> <br>
+                <input type="text" name="phone" id="Phone" placeholder="Phone"> <br> <br>
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea> <br> <br>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <div>
+        <img src="assests/images/myImage.png" alt="MyImg" width="300px"> <br>
+        <img src="assests/icon/logo.png" alt="logo">
+        <h2>Oshi</h2>
+    </div>
+
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Service">Service</a>
+        <a href="#Work">Work</a>
+        <a href="#Activity">Activity</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <div>
+        <img src="assests/icon/facebook.png" alt="facebook">
+        <img src="assests/icon/gmail.png" alt="gmail">
+        <img src="assests/icon/instagram.png" alt="instagram">
+        <img src="assests/icon/github.png" alt="github">
+        <img src="assests/icon/linkedin.png" alt="linkedin">
+    </div>
+
+    <label><h3>Elevating the Digital Experience!</h3></label>
+</footer>
 
 </body>
 </html>
