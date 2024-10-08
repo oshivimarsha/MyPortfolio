@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="normalize.css" >
+    <link rel="stylesheet" href="style.css">
 
-    <style>
+    <!--<style>
 
         * {
             margin: 0;
@@ -92,6 +94,7 @@
 
         main#Home{
             justify-content: space-between;
+            box-sizing: border-box;
             align-items: center;
             background-color: black;
             height: fit-content;
@@ -271,10 +274,9 @@
             font-size: 20px;
         }
 
-        main#About>div:first-child {
-            background-color: #c79900;
+        main#About>div {
+            background-color: red;
         }
-
         .para-1 {
             width: 900px;
             position: absolute;
@@ -334,15 +336,15 @@
             right: 0;
         }
 
-    </style>
+    </style>-->
 </head>
 <body>
 <!--Home section-->
-<header>
+<header class="header">
     <!--logo-->
-    <div>
+    <div class="logo">
         <!--<img src="assests/icon/logo.png" alt="logo" width="300px">-->
-        <h2>Oshi</h2>
+        <h2 class="logo-name">Oshi</h2>
     </div>
 
     <!--Navigation bar-->
@@ -358,38 +360,46 @@
     </nav>
 </header>
 
-<main id="Home">
-    <div class="detail">
-        <h3>Hi, There!</h3> <br>
-        <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
-        <h4>I'm a <span>UI/UX Designer</span></h4>
+<main id="Home" class="hero">
+    <div class="box-container">
+        <div class="box-main">
+            <div class="detail">
+                <h3>Hi, There!</h3> <br>
+                <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
+                <h4>I'm a <span>UI/UX Designer</span></h4>
 
-        <p>
-            This is my official portfolio website to showes all details and work experience web development.
-            I excel at crafting elegant digital experience and,
-            I am proficient in various programming languages and technologies.
-        </p>
+                <p>
+                    This is my official portfolio website to showes all details and work experience web development.
+                    I excel at crafting elegant digital experience and,
+                    I am proficient in various programming languages and technologies.
+                </p>
+            </div>
+
+            <div class="social-media">
+                <img src="assests/icon/email.png" alt="email" title="email" class="email" width="50px">
+                <img src="assests/icon/facebook.png" alt="facebook" title="facebook" class="facebook" width="50px">
+                <img src="assests/icon/instagram.png" alt="instagram" title="instagram" class="instagram" width="50px">
+                <img src="assests/icon/github.png" alt="github" title="github" class="github" width="50px">
+                <img src="assests/icon/linkedin.png" alt="linkedin" title="linkedin" class="linkedin" width="50px">
+            </div>
+        </div>
+
+        <div class="box-hero">
+            <!--my img-->
+            <div class="my-image">
+                <img src="assests/images/myImage.png" title="my image" alt="my image" class="girl">
+            </div>
+        </div>
+
+
+
+        <!--<div class="">
+            <div class="experience">01 Years of Experience</div>
+            <div class="technologies">03 Technologies</div>
+            <div class="project">02 Projects</div>
+            <div class="commit">91 Total Commit</div>
+        </div>-->
     </div>
-
-    <!--my img-->
-    <div class="images">
-        <img src="assests/images/myImage.png" title="my image" alt="my image" class="girl">
-    </div>
-
-    <div class="social-media">
-        <img src="assests/icon/email.png" alt="email" title="email" class="email" width="50px">
-        <img src="assests/icon/facebook.png" alt="facebook" title="facebook" class="facebook" width="50px">
-        <img src="assests/icon/instagram.png" alt="instagram" title="instagram" class="instagram" width="50px">
-        <img src="assests/icon/github.png" alt="github" title="github" class="github" width="50px">
-        <img src="assests/icon/linkedin.png" alt="linkedin" title="linkedin" class="linkedin" width="50px">
-    </div>
-
-    <!--<div class="">
-        <div class="experience">01 Years of Experience</div>
-        <div class="technologies">03 Technologies</div>
-        <div class="project">02 Projects</div>
-        <div class="commit">91 Total Commit</div>
-    </div>-->
 </main>
 
 <!--About section-->
