@@ -350,9 +350,7 @@ span {
     border: 1px solid var(--text-color);
     border-radius: 16px;
     padding: 1.3rem 2rem ;
-    box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
-    -webkit-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
-    -moz-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    box-shadow: 10px 10px #454646;
 }
 
 .box-container-experience>section {
@@ -361,13 +359,11 @@ span {
     border: 1px solid var(--text-color);
     border-radius: 16px;
     padding: 1.3rem 2rem ;
-    box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
-    -webkit-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
-    -moz-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    box-shadow: 10px 10px #454646;
 }
 
 .box-container-education>section>div {
-    background-color: #c79900;
+    /*background-color: #c79900;*/
     width: 100px;
     height: 100px;
     margin: 1rem;
@@ -423,4 +419,36 @@ span {
 
 .exp-4 {
     bottom: 55px;
+}
+
+.ijse-logo>img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -191px;
+    left: -1px;
+}
+
+.kdmv>img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -191px;
+    left: -1px;
+}
+
+.kgmv>img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -196px;
+    left: -1px;
+}
+
+.vta>img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 574px;
+    left: -1px;
 }
