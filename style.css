@@ -190,3 +190,118 @@ span {
     max-height: 480px;
 }
 
+
+/* ----------------------------------- About Page -------------------------------------------------------------*/
+#About {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.heading-about {
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.box-about>p {
+    width: 900px;
+}
+
+.about-detail div {
+    margin: 20px 0;
+    padding-left: 7rem;
+}
+
+.about-detail>span {
+    font-weight: bold;
+}
+
+.box-about {
+    padding-right: 1rem;
+}
+
+.box-container-about>div:nth-child(2){
+    padding-left: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 4rem;
+    position: absolute;
+    right: 70px;
+    top: 1000px;
+}
+
+.about-pic {
+    display: flex;
+    justify-content: center;
+    /*width: 30vw;
+    height: 65vh;*/
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
+    border: 4px solid #c79900;
+
+    position: relative;
+    left: 80px;
+    bottom: 30px;
+}
+
+.my-image2 {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 380px;
+    border-radius: 100%;
+
+    position: relative;
+    left: -3px;
+    bottom: -4px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #171616;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+
+    position: absolute;
+    right: 580px;
+    bottom: -100px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
