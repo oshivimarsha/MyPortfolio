@@ -305,3 +305,122 @@ span {
     opacity: 1;
     right: 0;
 }
+
+
+/* ----------------------------------- Education / Experience Page -------------------------------------------------------------*/
+
+.Education-Experience {
+    margin-bottom: 1100px;
+}
+
+.heading-edu {
+    color: #c79900;
+    font-size: 50px;
+    background-color: black;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.heading-exp {
+    color: #c79900;
+    font-size: 50px;
+    background-color: black;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.box-container-edu-exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.box-container-education {
+    position: absolute;
+    left: 100px;
+}
+
+.box-container-experience {
+    position: absolute;
+    left: 900px;
+}
+
+.box-container-education>section {
+    width: 500px;
+    margin: 3rem;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+    padding: 1.3rem 2rem ;
+    box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    -webkit-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    -moz-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+}
+
+.box-container-experience>section {
+    width: 500px;
+    margin: 3rem;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+    padding: 1.3rem 2rem ;
+    box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    -webkit-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+    -moz-box-shadow: 2px 7px 3px 4px rgba(255,255,255,0.26);
+}
+
+.box-container-education>section>div {
+    background-color: #c79900;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+    padding: 1.3rem 2rem ;
+
+    position: absolute;
+    left: 400px;
+}
+
+.box-container-education>section>div:first-child {
+    bottom: 630px;
+}
+
+.box-container-education>section:nth-child(2)>div {
+    bottom: 440px;
+}
+
+.box-container-education>section:nth-child(3)>div {
+    bottom: 250px;
+}
+
+.box-container-education>section:nth-child(4)>div {
+    bottom: 55px;
+}
+
+.box-container-experience>section>div {
+    background-color: #c79900;
+
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 16px;
+    padding: 1.3rem 2rem ;
+
+    position: absolute;
+    left: 410px;
+}
+
+.exp-1 {
+    bottom: 630px;
+}
+
+.exp-2 {
+    bottom: 440px;
+}
+
+.exp-3 {
+    bottom: 250px;
+}
+
+.exp-4 {
+    bottom: 55px;
+}
