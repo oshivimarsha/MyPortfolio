@@ -8,338 +8,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="normalize.css" >
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--<style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Philosopher", sans-serif;
-            font-style: normal;
-        }
-
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-           /* background-color: black;*/
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
-            background-color: #171616;
-            width: 100%;
-            height: 75px;
-            position: fixed;
-            top: 0;
-        }
-
-        header>div {
-            display: flex;
-            align-items: center;
-            color: #c79900;
-        }
-
-        header>nav {
-            height: fit-content;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 20px;
-            margin: auto;
-        }
-
-        header>img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        header>h2 {
-            font-size: 24px;
-            color: #c79900;
-        }
-
-        header>nav>ul>li{
-            display: inline;
-            margin: 0px 15px;
-        }
-
-        header>nav>ul {
-            /*list-style-type: none;
-            display: flex;
-            gap: 40px;*/
-        }
-
-        nav>ul>li>a {
-            text-decoration: none;
-            color: #c79900;
-            font-weight: bold;
-            font-size: 24px;
-            transition: color 0.3s ease;
-        }
-
-        nav>ul>li>a:hover {
-            color: white;
-        }
-
-        /* Main Section */
-        /*.detail {
-            position: absolute;
-            bottom: 100px;
-            right: 30%;
-
-        }*/
-        main {
-            padding: 365px;
-        }
-
-        main#Home{
-            justify-content: space-between;
-            box-sizing: border-box;
-            align-items: center;
-            background-color: black;
-            height: fit-content;
-            top: 0;
-        }
-
-        main#Home>div:first-child {
-            max-width: 50%;
-        }
-
-        main h3 {
-            font-size: 38px;
-            color: white;
-        }
-
-        main h1 {
-            font-size: 72px;
-            color: white;
-        }
-
-        main h4 {
-            font-size: 54px;
-            color: white;
-        }
-
-        main#Home p {
-            font-size: 24px;
-            font-style: oblique;
-            color: white;
-            position: relative;
-            right: 0;
-            bottom: -50px;
-            font-family: "Bodoni MT";
-        }
-
-        span {
-            color: #c79900;
-        }
-
-        .detail {
-            position: absolute;
-            bottom: 250px;
-            left: 100px;
-        }
-
-        main>img {
-            width: 300px;
-            position: absolute;
-            right: -300px;
-            display: inline;
-        }
-
-        main>img:nth-last-child {
-            width: 200px;
-            position: relative;
-            right: -300px;
-            top: 0;
-        }
-
-        /*.images img {
-            position: absolute;
-            left: 80%;
-            bottom: 0;
-            transform: translateX(-50%);
-            transition: bottom 1s, left 1s;
-        }*/
-
-        .girl {
-            width: 600px;
-            position: absolute;
-            bottom: 0;
-            right: 10px;
-        }
-
-        .shape {
-            position: absolute;
-            width: 1100px;
-            left: 71%;
-            bottom: 100px;
-        }
-
-        .shape2 {
-            width: 900px;
-            position: absolute;
-            right: 1450px;
-            bottom: -4%;
-        }
-
-        .social-media {
-            position: absolute;
-            right: 950px;
-            bottom: 50px;
-        }
-
-        .experience {
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #c79900;
-            color: white;
-            text-align: center;
-            position: absolute;
-            right: 1135px;
-            bottom: 5%;
-        }
-
-        .technologies {
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #c79900;
-            color: white;
-            text-align: center;
-            position: absolute;
-            right: 900px;
-            bottom: 5%;
-        }
-
-        .project {
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #c79900;
-            color: white;
-            text-align: center;
-            position: absolute;
-            right: 665px;
-            bottom: 5%;
-        }
-
-        .commit {
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #c79900;
-            color: white;
-            text-align: center;
-            position: absolute;
-            right: 430px;
-            bottom: 5%;
-        }
-
-        /* =========================== about ================================== */
-        main#About {
-            background-color: #3b3a3a;
-        }
-
-        main#About>h1 {
-            color: #c79900;
-            text-align: center;
-            font-size: 40px;
-            background-color: #3b3a3a;
-
-            position: absolute;
-            top: 830px;
-            right: 30%;
-            left: 30%;
-        }
-
-        main#About>section>img {
-            width: 450px;
-
-            position: absolute;
-            top: 605px;
-            left: -60px;
-        }
-
-        .about-para {
-            width: 1000px;
-            border-radius: 5px;
-            background-color: #c79900;
-            color: white;
-            font-size: 20px;
-        }
-
-        main#About>div {
-            background-color: red;
-        }
-        .para-1 {
-            width: 900px;
-            position: absolute;
-            top: 1000px;
-            right: 200px;
-        }
-
-        .para-2 {
-            width: 900px;
-            position: absolute;
-            top: 1100px;
-            right: 200px;
-        }
-
-        .button {
-            display: inline-block;
-            border-radius: 5px;
-            background-color: #171616;
-            border: none;
-            color: white;
-            text-align: center;
-            font-size: 18px;
-            padding: 20px;
-            width: 200px;
-            height: 50px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 2px;
-
-            position: absolute;
-            right: 600px;
-            bottom: -550px;
-        }
-
-        .button span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-        .button:hover span {
-            padding-right: 25px;
-        }
-
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-
-    </style>-->
 </head>
 <body>
 <!--Home section-->
@@ -351,7 +22,7 @@
     </div>
 
     <!--Navigation bar-->
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -364,6 +35,7 @@
 </header>
 
 <!-- main page-->
+<!--
 <main id="Home" class="hero">
     <div class="box-container">
         <div class="box-main">
@@ -389,18 +61,46 @@
         </div>
 
         <div class="box-hero">
-            <!--my img-->
+            &lt;!&ndash;my img&ndash;&gt;
             <div class="my-image">
                 <img src="assests/images/myImage.png" title="my image" alt="my image" class="girl">
             </div>
         </div>
 
-        <!--<div class="">
+        &lt;!&ndash;<div class="">
             <div class="experience">01 Years of Experience</div>
             <div class="technologies">03 Technologies</div>
             <div class="project">02 Projects</div>
             <div class="commit">91 Total Commit</div>
-        </div>-->
+        </div>&ndash;&gt;
+    </div>
+</main>
+-->
+
+<main class="hero" id="Home">
+    <section class="home">
+        <div class="home-text">
+            <h4>Hi, There!</h4> <br>
+            <h1>I'm Oshadhi <span>Vimarsha</span></h1> <br>
+            <h3>I'm a <span>UI/UX Designer</span></h3>
+            <p>This is my official portfolio website to showes all details and work experience web development.
+                I excel at crafting elegant digital experience.
+            </p>
+        </div>
+
+        <div class="home-img">
+            <img src="assests/images/myImage.png" title="my image" alt="my image" class="girl">
+        </div>
+    </section>
+
+    <div class="share">
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxs-envelope'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+            <a href=""><i class='bx bxl-github' ></i></a>
+            <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
     </div>
 </main>
 
@@ -1100,9 +800,7 @@
                 </div>
 
                 <div class="social-media">
-                    <div class="social-p">
-                        <p>Connect with us : </p>
-                    </div>
+                    <p>Connect with us : </p>
                     <div class="social-icons">
                         <a href="#">
                             <i class="">icon</i>
@@ -1160,31 +858,85 @@
     </section>
 </main>
 
+<!--<footer class="footer">
+    <div class="footer-left">
+        <div>
+            <img src="assests/icon/logo.png" alt="logo">
+
+        </div>
+
+        <div class="footer-links">
+            <ul class="list">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Activity">Activity</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <p class="footer-company-name">
+            Copyright 2024 <strong>Software Engineering</strong> All right reserved
+        </p>
+
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="">icon</i>
+            kalutara</p>
+        </div>
+
+        <div>
+            <i class="">icon</i>
+            <p>074 0318936</p>
+        </div>
+
+        <div>
+            <i class="">icon</i>
+            <p>oshadivimarsha@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the Company</span>
+            <strong>oshi vimarsha</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium aliquam animi corporis cupiditate delectus dolorum eos, est fuga fugit laboriosam
+        </p>
+
+        <div class="footer-icons">
+            <a href="#"><i class=""></i>f</a>
+            <a href="#"><i></i>e</a>
+            <a href="#"><i></i>i</a>
+            <a href="#"><i></i>g</a>
+            <a href="#"><i></i>l</a>
+        </div>
+    </div>
+
+    <section class="last">
+        <label><h3>Elevating the Digital Experience!</h3></label>
+    </section>
+
+</footer>-->
 <footer>
-    <div>
-        <img src="assests/images/myImage.png" alt="MyImg" width="300px"> <br>
-        <img src="assests/icon/logo.png" alt="logo">
-        <h2>Oshi</h2>
+    <div class="footer-content">
+        <h3>My Portfolio</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at consequuntur corporis dolor facilis illo in incidunt itaque, laudantium minima, modi non, numquam placeat quasi rem reprehenderit similique vero vitae?
+        </p>
+
+        <!-- Social icon -->
+        <ul class="socials">
+            <li><a href="#"><i class=""></i>F</a></li>
+            <li><a href="#"><i class=""></i>G</a></li>
+            <li><a href="#"><i class=""></i>E</a></li>
+            <li><a href="#"><i class=""></i>I</a></li>
+            <li><a href="#"><i class=""></i>L</a></li>
+        </ul>
     </div>
-
-    <nav>
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#Service">Service</a>
-        <a href="#Work">Work</a>
-        <a href="#Activity">Activity</a>
-        <a href="#Contact">Contact</a>
-    </nav>
-
-    <div>
-        <img src="assests/icon/facebook.png" alt="facebook">
-        <img src="assests/icon/gmail.png" alt="gmail">
-        <img src="assests/icon/instagram.png" alt="instagram">
-        <img src="assests/icon/github.png" alt="github">
-        <img src="assests/icon/linkedin.png" alt="linkedin">
-    </div>
-
-    <label><h3>Elevating the Digital Experience!</h3></label>
 </footer>
 
 </body>
