@@ -595,6 +595,7 @@ span {
 
 
 /* ----------------------------------- About Page -------------------------------------------------------------*/
+/*
 #About {
     margin-top: 3rem;
     margin-bottom: 10rem;
@@ -642,8 +643,8 @@ span {
 .about-pic {
     display: flex;
     justify-content: center;
-    /*width: 30vw;
-    height: 65vh;*/
+    !*width: 30vw;
+    height: 65vh;*!
     width: 380px;
     height: 380px;
     border-radius: 100%;
@@ -713,6 +714,177 @@ span {
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+*/
+
+#About {
+}
+
+.about {
+    background-color: #2d2d2d;
+    height: 900px;
+}
+
+.heading-about h1 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.about-content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #e7e7e7;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.about-detail div {
+    margin: 20px 0;
+    font-size: 20px;
+    padding-left: 7rem;
+}
+
+.about-detail>span {
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.about-content {
+    flex: 1;
+    width: 600px;
+    margin: 0 25px;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 400px;
+    max-height: 480px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #c79900;
+    border-radius: 100%;
+    position: relative;
+    background-color: #c79900;
+
+}
+
+.about-img img {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 380px;
+    border-radius: 200%;
+
+    position: relative;
+    left: 0;
+    bottom: -10px;
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #171616;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px;
+
+    position: absolute;
+    left: 180px;
+}
+
+.button span {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    top: -5px;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    color: #c79900;
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .heading-about h1 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .about {
+        margin: 0;
+        height: 1200px;
+    }
+
+    .container-about {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .about-content {
+        order: 2;
+    }
+
+    .about-img img {
+        order: 1;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        width: 500px;
+        text-align: center;
+        padding-left: 70px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .about-detail div {
+        margin: 20px 0;
+        font-size: 15px;
+        padding-left: 7rem;
+    }
+
+    .button {
+        left: 140px;
+    }
 }
 
 
