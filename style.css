@@ -1055,7 +1055,21 @@ span {
     color: #c79900;
 }
 
+@media screen and (max-width: 1200px) {
+    .cards-service {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media screen and (max-width: 900px) {
+    .cards-service {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .heading-service {
+        font-size: 3.5rem;
+    }
+}
 
 /* ----------------------------------- work Page -------------------------------------------------------------*/
 
