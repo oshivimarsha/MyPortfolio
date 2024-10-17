@@ -638,6 +638,7 @@ span {
 /* ----------------------------------- Experience Page -------------------------------------------------------------*/
 
 
+/*
 
 .circle-exp-left {
     width: 30px;
@@ -662,6 +663,91 @@ span {
     right: 20px;
     left: -85px;
     transform: translate(50%, -50%);
+}
+*/
+
+.heading-exp {
+    text-align: center;
+    font-size: 55px;
+}
+
+.check-point-exp div h2 {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-exp {
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.check-point-exp {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.check-point-exp div {
+    border: 2px solid #c79900;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.check-point-exp p {
+    line-height: 27px;
+    color: #ccc;
+}
+
+.check-point-exp:nth-child(odd) {
+    border-left: 3px solid #c79900;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.check-point-exp:nth-child(even) {
+    border-right: 3px solid #c79900;
+    padding-right: 3em;
+    transform: translateX(-269.5px);
+}
+
+.check-point-exp:nth-child(odd)::before,
+.check-point-exp:nth-child(even)::before {
+    content: '';
+    background-color: #c79900;
+    width: 48px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check-point-exp:nth-child(odd)::before {
+    left: 0;
+}
+
+.check-point-exp:nth-child(even)::before {
+    right: 0;
+}
+
+.check-point-exp:nth-child(odd) div::before,
+.check-point-exp:nth-child(even) div::before {
+    content: '';
+    background: #c79900;
+    box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.check-point-exp:nth-child(odd) div::before {
+    left: -7px;
+}
+
+.check-point-exp:nth-child(even) div::before {
+    right: -7px;
 }
 
 /* ----------------------------------- Skills Page -------------------------------------------------------------*/
@@ -1074,7 +1160,7 @@ span {
 /* ----------------------------------- work Page -------------------------------------------------------------*/
 
 #Work {
-    margin-top: 100px;
+    margin-top: -200px;
     margin-bottom: 80px;
 }
 
