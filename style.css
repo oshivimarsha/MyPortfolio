@@ -750,6 +750,34 @@ span {
     right: -7px;
 }
 
+@media screen and (max-width: 1150px) {
+    .timeline-exp {
+        width: 80vw;
+    }
+
+    .timeline-exp .check-point-exp {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .timeline-exp .check-point-exp::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-exp .check-point-exp div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 /* ----------------------------------- Skills Page -------------------------------------------------------------*/
 
 
