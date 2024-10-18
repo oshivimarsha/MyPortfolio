@@ -2394,8 +2394,152 @@ textarea.input {
     }
 }*/
 
+/*-----------Contact--------------*/
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 40px;
+}
 
+.section-on-header {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #c79900;
+    margin-bottom: .5em;
+}
+
+.heading-contact, .sub-heading-contact {
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.sub-heading-contact {
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.para-contact {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.para-contact .para-contact2 {
+    text-align: left;
+}
+
+.con-form {
+    width: 90%;
+}
+
+.input {
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9em;
+    padding: 1em;
+    outline: none;
+    margin-bottom: 1em;
+    background-color: #504E4E;
+    color: #c79900;
+    border-radius: 10px;
+    border: 1px solid rgb(53,53,53);
+}
+
+.input:focus {
+    border: 1px solid #c79900;
+}
+
+.input::placeholder {
+    text-transform: capitalize;
+}
+
+.submit {
+    background-color: #c79900;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.map-container .mapBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 90%;
+    border-radius: 20px;
+    background-color: #c79900;
+}
+
+.map-container .map {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.map-container .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-method {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.contact-method .c-method {
+    display: flex;
+    align-items: center;
+}
+
+.c-method .c-text .sub-heading-con {
+    font-size: 1.5rem;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #c79900;
+    width: 80px;
+}
+
+@media screen and (min-width: 800px) {
+    .contact {
+        max-width: 1100px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-method {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 /*--------------------------------------- footer ------------------------------------------------------------------ */
 
