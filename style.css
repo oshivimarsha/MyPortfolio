@@ -781,6 +781,7 @@ span {
 /* ----------------------------------- Skills Page -------------------------------------------------------------*/
 
 
+/*
 .Skills {
     margin-bottom: 600px;
 }
@@ -861,9 +862,9 @@ span {
     transition: 3s all;
     animation-name: animationProgress;
     font-family: 'Poppins', sans-serif;
-    /*animation: animate 5s cubic-bezier(1,0,0,5) forwards;
+    !*animation: animate 5s cubic-bezier(1,0,0,5) forwards;
     transform: scaleX(0);
-    transform-origin: left;*/
+    transform-origin: left;*!
 }
 
 @keyframes animationProgress {
@@ -872,11 +873,11 @@ span {
     }
 }
 
-/*@keyframes animate {
+!*@keyframes animate {
     100% {
         transform: scaleX(0.4);
     }
-}*/
+}*!
 
 .img1 img {
     width: 150px;
@@ -957,7 +958,7 @@ span {
     position: relative;
     width: 150px;
     height: 150px;
-   /* background-color: red;*/
+   !* background-color: red;*!
 }
 
 .box-container-professional .card .percent svg {
@@ -1065,8 +1066,339 @@ span {
     position: absolute;
     bottom: 35px;
 }
+*/
 
-/* ----------------------------------- Service Page -------------------------------------------------------------*/
+.skills {
+    margin-left: 50px;
+}
+
+.main-text-skill h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.main-text-skill h5 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skills-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h2 {
+    margin-bottom: 2rem;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.skill-left .skills-bar .info-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skills-bar .skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skills-bar .skill-bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #c79900;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
+}
+
+.skills-bar .skill-bar .java {
+    width: 72%;
+    animation: java 2s;
+}
+
+.skills-bar .skill-bar .html {
+    width: 85%;
+    animation: html 2s;
+}
+
+.skills-bar .skill-bar .css {
+    width: 80%;
+    animation: css 2s;
+}
+
+.skills-bar .skill-bar .javascript {
+    width: 60%;
+    animation: javascript 2s;
+}
+
+.skills-bar .skill-bar .mysql {
+    width: 65%;
+    animation: mysql 2s;
+}
+
+.skills-bar .skill-bar .figma {
+    width: 95%;
+    animation: figma 5s;
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 72px;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85px;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80px;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60px;
+    }
+}
+
+@keyframes mysql {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65px;
+    }
+}
+
+@keyframes figma  {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------*/
+.professional-skills {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 80px;
+    margin-top: -100px;
+    right: 10px;
+    bottom: 40px;
+}
+
+.box-container-professional {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.box-container-professional .card {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    left: 10px;
+    bottom: -120px;
+}
+
+.box-container-professional>div:nth-child(3) {
+    position: absolute;
+    bottom: -350px;
+}
+
+.box-container-professional>div:nth-child(4) {
+    position: absolute;
+    bottom: -350px;
+    left: 250px;
+}
+
+.box-container-professional .card .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box-container-professional .card .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.box-container-professional .card .percent svg circle {
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: black;
+    transform: translate(5px,5px);
+}
+
+.box-container-professional .card .percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 8;
+    }
+}
+
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+
+.number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 30px;
+}
+
+.number h2 span {
+    font-weight: 300;
+    font-size: 0.5em;
+
+}
+
+.number p {
+    font-weight: 4 00;
+    font-size: 0.8em;
+    line-height: 2px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+}
+
+    /* ----------------------------------- Service Page -------------------------------------------------------------*/
 
 #Service {
     margin-top: 100px;
@@ -1461,7 +1793,7 @@ span {
     top: -5px;
 }
 
-.card-assignment {
+/*.card-assignment {
     position: relative;
     width: 300px;
     height: 400px;
@@ -1517,10 +1849,10 @@ span {
 }
 
 .description {
-   /* display: flex;
+   !* display: flex;
     gap: 10px;
     align-items: center;
-    padding: 10px;*/
+    padding: 10px;*!
 }
 
 .action button {
@@ -1532,6 +1864,135 @@ span {
     background-color: #c79900;
     display: block;
     margin-top: 10px;
+}*/
+
+/*.container-assignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.card-assignment {
+    background-color: #ff88a6;
+    border: 3px solid #504E4E;
+    color: white;
+    position: relative;
+    background-color: #504E4E;
+    width: 280px;
+    margin: 2rem;
+    border-radius: 20px;
+}*/
+
+.heading-assigment {
+
+}
+
+.assignment-box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #504E4E;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.assignment-box::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background: linear-gradient(#c79900, #c79900);
+    box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
+    animation: animate 4s linear infinite;
+}
+
+.assignment-box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #262626;
+    border-radius: 16px;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(350deg);
+    }
+}
+
+.assignment-box h2 {
+    position: relative;
+    top: -150px;
+    left: 20px;
+    color: #fff;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.assignment-box p {
+    top: 80px;
+    width: 100px;
+    color: white;
+    z-index: 10;
+}
+
+.btn-assi a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    color: #c79900;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #c79900;
+    border-radius: 20px;
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+    align-items: center;
+
+}
+
+.btn-assi a:hover {
+    color: white;
+    background-color: #c79900;
+}
+
+
+.row h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.text-center-assi {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.text-center-assi h2 {
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+
+    line-height: 1.2;
+    margin-top: 30px;
 }
 
 /*--------------------------------------------Activity Page ------------------------------------------------------------*/
@@ -1541,7 +2002,7 @@ span {
     font-weight: bold;
     text-align: center;
     background-color: black;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -1610,7 +2071,7 @@ span {
 
 /* ---------------------------------------------- Contact Page --------------------------------------------------------*/
 
-.heading-contact {
+/*.heading-contact {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -1637,7 +2098,7 @@ span {
     max-width: 800px;
     height: 600px;
     background-color: transparent;
-    /*  box-shadow: 0 0 20px 1px #c79900;*/
+    !*  box-shadow: 0 0 20px 1px #c79900;*!
     z-index: 1000;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1881,7 +2342,7 @@ textarea.input {
     transform: scale(1.05);
 }
 
-/*.contact-info:before {
+!*.contact-info:before {
     content: "";
     position: absolute;
     width: 110px;
@@ -1891,7 +2352,7 @@ textarea.input {
     bottom: 50px;
     right: 50px;
     opacity: 0.3;
-}*/
+}*!
 
 @media (max-width: 859px) {
     .form {
@@ -1931,7 +2392,9 @@ textarea.input {
         position: relative;
         left: -37px;
     }
-}
+}*/
+
+
 
 
 /*--------------------------------------- footer ------------------------------------------------------------------ */

@@ -4,106 +4,314 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .container {
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          /*  font-family: 'Poppins', sans-serif;*/
+        }
+
+        .contact {
             position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
             display: flex;
             justify-content: center;
-           /* align-items: center;*/
-            flex-wrap: wrap;
-            gap: 100px 50px;
-            padding: 100px 50px;
-        }
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffffff;
 
-        .container .card {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            width: 350px;
-            height: 300px;
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0 35px 80px #c79900;
-            transition: 0.5s;
-        }
+            .content-contact {
+                max-width: 800px;
+                text-align: center;
+            }
 
-        .container .card:hover {
-            height: 400px;
-        }
+            .content-contact h2 {
+                font-size: 3em;
+                color: black;
+                font-weight: 500;
+            }
 
-        .container .card .imgBx {
-            position: absolute;
-            top: 20px;
-            width: 300px;
-            height: 220px;
-            background-color: black;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: 0.5s;
-        }
+            .content-contact p {
+                font-size: 1.1em;
+                color: #000000;
+                font-weight: 300;
+            }
 
-        .container .card:hover .imgBx {
-            top: -100px;
-            scale: 0.75;
-            box-shadow: 0 15px 45px #171616;
-        }
+            .container-contact {
+                width: 100%;
 
-        .container .card .imgBx img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+                display: flex;
+                justify-content: center;
+                align-items: center;gap: 50px;
+                margin-top: 30px;
+            }
 
-        .content h2 {
-            position: relative;
-            top: -20px;
-        }
+            .container-contact .contact-info {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
 
-        .container .card .content {
-            position: absolute;
-            top: 252px;
-            width: 100%;
-            padding: 0 30px;
-            height: 35px;
-            overflow: hidden;
-            text-align: center;
-            transition: 0.5s;
-        }
+            .container-contact .contact-info .box {
+                position: relative;
+                padding: 20px;
+                display: flex;
+                cursor: pointer;
+            }
 
-        .container .card:hover .content {
-            top: 130px;
-            height: 250px;
+            .container-contact .contact-info .box .icon {
+                position: relative;
+                min-width: 60px;
+                height: 60px;
+                background: repeating-conic-gradient(from 30deg, #c79900 0%, yellow 10%, transparent 10%, transparent 50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-contact .contact-info .box .icon::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: repeating-conic-gradient(from 117.5deg, #c79900 0%, yellow 10%, transparent 10%, transparent 50%);
+            }
+
+            .container-contact .contact-info .box .icon::after {
+                content: "";
+                position: absolute;
+                inset: 2px;
+                background: #171616;
+            }
+
+            .container-contact .contact-info .box .icon b {
+                position: absolute;
+                inset: 8px;
+                background-color: #c79900;
+                z-index: 2;
+            }
+
+            .container-contact .contact-info .box .icon i {
+                position: relative;
+                inset: 8px;
+                color: #ffffff;
+                z-index: 1000;
+                font-size: 1.25em;
+            }
+
+            .container-contact .contact-info .box .text {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                font-size: 1.1em;
+                color: black;
+            }
+
+            .container-contact .contact-info .box .text h3 {
+                font-weight: 500;
+                color: #c79900;
+            }
+
+            .container-contact .contact-info .txt {
+                color: black;
+                margin-top: 50px;
+                font-weight: 500;
+                border-left: 50px solid #c79900;
+                padding-left: 10px;
+                line-height: 1em;
+            }
+
+            .container-contact .contact-info .sci {
+                position: relative;
+                display: flex;
+                gap: 30px;
+                margin: 20px 0;
+            }
+
+            .container-contact .contact-info .sci li {
+                list-style: none;
+            }
+
+            .container-contact .contact-info .sci li a {
+                color: #091ce3;
+                font-size: 1.5em;
+                transition: 0.25s;
+            }
+
+            .container-contact .contact-info .sci li a:hover {
+                color: #c79900;
+                filter: drop-shadow(0 0 5px #c79900);
+            }
+
+            .container-contact .contact-form {
+                position: absolute;
+                inset: 4px;
+                background-color: black;
+                border-radius: 8px;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                padding: 50px 40px;
+            }
+
+            .container-contact .contact-form::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: repeating-conic-gradient(from var(--a), #c79900 0%, #c79900 10%, transparent 10%, transparent 50%);
+                animation: animate 3s linear infinite;
+                animation-delay: 1.5s;
+            }
+
+            .container-contact .contact-form::after {
+                content: "";
+                position: absolute;
+                inset: 3px;
+                border: 20px solid #ffffff;
+
+            }
+
+            @property --a {
+                syntax: "<angle>";
+              initial-value: 0deg;
+              inherits: false;
+            }
+
+            @keyframes animate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .container-contact .contact-form {
+                position: relative;
+                z-index: 10 ;
+            }
+
+            .container-contact .contact-form h2 {
+                font-size: 2em;
+                color: #c79900;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 0.1em;
+            }
+
+            .container-contact .contact-form .inputBox {
+                position: relative;
+                width: 300px;
+                margin-top: 35px;
+            }
+
+            .inputBox input {
+                position: relative;
+                width: 100%;
+                height: 35px;
+                padding: 20px 10px 10px;
+                background: transparent;
+                outline: none;
+                box-shadow: none;
+                color: #ffffff;
+            }
+
+            .inputBox span {
+                position: absolute;
+                left: 0;
+                padding: 20px 10px 10px;
+                pointer-events: none;
+                font-size: 1em;
+                color: #818080;
+                letter-spacing: 0.05em;
+                transition: 0.5s;
+            }
+
+            .inputBox input:valid ~ span,
+            .inputBox input:focus ~ span {
+                color: white;
+                font-size: 0.75em;
+                transform: translateY(-34px);
+            }
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="assests/images/project.jpeg" alt="project image">
-            </div>
-            <div class="content">
-                <h2>Paramee Ice cream System</h2>
-                <p>
-                    Standalone Application.This project is built using Java, JavaFX, Maven, MySQL, Hibernate, Layered Architecture, JasperStudio, and an Email API.
-                </p>
-                <a href="#">Read More</a>
-            </div>
+    <section class="contact">
+        <div class="content-contact">
+            <h2>Contact <span>Us</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi molestiae non provident quam quibusdam quo! Ad animi aut excepturi molestias mollitia nam perferendis similique voluptatem. Consectetur expedita ratione sint vel!
+            </p>
         </div>
 
-        <div class="card">
-            <div class="imgBx"></div>
-            <div class="content"></div>
-        </div>
+        <div class="container-contact">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><b></b>//icon//</div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>N0.12/09, Ranaviru Gayan MW,<br> Bombuwala, Nagoda<br> Kalutara South </p>
+                    </div>
+                </div>
 
-        <div class="card">
-            <div class="imgBx"></div>
-            <div class="content"></div>
+                <div class="box">
+                    <div class="icon"><b></b>//icon//</div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>076 216 4304</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><b></b>//icon//</div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>dinukaphoto692@gmail.com</p>
+                    </div>
+                </div>
+
+                <h2 class="txt">Connect with me</h2>
+                <ul class="sci">
+                    <li><a href="#"><i>Icon FB</i></a></li>
+                    <li><a href="#"><i>Icon instagram</i></a></li>
+                    <li><a href="#"><i>Icon github</i></a></li>
+                    <li><a href="#"><i>Icon Gmail</i></a></li>
+                    <li><a href="#"><i>Icon linkedin</i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                        <span></span>
+                    </div>
+
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
