@@ -522,7 +522,22 @@ span {
     box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
     position: relative;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.text-box h2 {
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.text-box h6 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #c4bfbf;
 }
 
 .left-container {
@@ -577,7 +592,7 @@ span {
     border-radius: 50%;
     box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
     position: relative;
-    right: 70px;
+    right: 65px;
     top: 80px;
 }
 
@@ -2563,6 +2578,7 @@ h3 {
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
+    margin-bottom: 40px;
     line-height: 3rem;
     color: #c79900;
 }
@@ -2581,6 +2597,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: 1rem 0.3rem 2rem;
+    margin-bottom: 50px;
 }
 
 .socials li {
@@ -2593,11 +2610,19 @@ h3 {
     border: 1.1px solid white;
     padding: 8px;
     border-radius: 50%;
+    margin-bottom: 60px;
     width: 35px;
 }
 
+.socials li a:hover {
+    color: #c79900;
+    border: 2px solid #c79900;
+}
+
 .footer-menu {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .footer-menu ul {
