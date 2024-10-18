@@ -1765,6 +1765,12 @@ span {
     box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
 }
 
+.btn-pro i {
+    margin-right: 10px;
+    color: #c79900;
+    font-size: 20px;
+}
+
 .btn-pro a {
     position: relative;
     display: inline-block;
@@ -1783,6 +1789,10 @@ span {
 }
 
 .btn-pro a:hover {
+    color: white;
+}
+
+.btn-pro i:hover {
     color: white;
 }
 
