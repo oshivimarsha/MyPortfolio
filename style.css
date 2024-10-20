@@ -2037,6 +2037,10 @@ span {
     margin-top: 30px;
 }
 
+.container-assignment {
+    text-align: center;
+}
+
 .row-assignment {
     width: 1200px;
     height: 100%;
@@ -2072,19 +2076,15 @@ span {
     font-size: 1.2em;
     letter-spacing: 0.1em;
     color: #c79900;
-    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     border: 2px solid #c79900;
     padding: 10px 30px;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
 }
 
