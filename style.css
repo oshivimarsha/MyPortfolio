@@ -1452,62 +1452,69 @@ span {
 
 
 /*-------------------------------------------------------------------------------------*/
-.professional-skills {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-left: 80px;
-    margin-top: -100px;
-    right: 10px;
-    bottom: 40px;
+
+
+.heading-professional-skills {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 130px;
 }
 
-.box-container-professional {
+.container-professional-skills {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+    background-color: black;
+}
+
+.container-professional-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card-professional-skills {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
     gap: 40px;
 }
 
-.box-container-professional .card {
+.container-card-professional-skills .card {
     position: relative;
     width: 200px;
     height: 220px;
-    background-color: #000000;
+    background-color: #2a2929;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     left: 10px;
-    bottom: -120px;
+
 }
 
-.box-container-professional>div:nth-child(3) {
-    position: absolute;
-    bottom: -350px;
-}
-
-.box-container-professional>div:nth-child(4) {
-    position: absolute;
-    bottom: -350px;
-    left: 250px;
-}
-
-.box-container-professional .card .percent {
+.container-card-professional-skills .card .percent {
     position: relative;
     width: 150px;
     height: 150px;
 }
 
-.box-container-professional .card .percent svg {
+.container-card-professional-skills .card .percent svg {
     position: relative;
     width: 150px;
     height: 150px;
     transform: rotate(270deg);
 }
 
-.box-container-professional .card .percent svg circle {
+.container-card-professional-skills .card .percent svg circle {
     width: 100px;
     height: 100px;
     fill: transparent;
@@ -1516,7 +1523,7 @@ span {
     transform: translate(5px,5px);
 }
 
-.box-container-professional .card .percent svg circle:nth-child(2) {
+.container-card-professional-skills .card .percent svg circle:nth-child(2) {
     stroke: var(--clr);
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
@@ -1577,6 +1584,7 @@ span {
     opacity: 0;
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
+    margin-bottom: 15px;
 }
 
 .number h2 {
@@ -1586,7 +1594,7 @@ span {
     font-weight: 700;
     font-size: 2.5em;
     position: absolute;
-    bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .number h2 span {
@@ -1605,6 +1613,8 @@ span {
     position: absolute;
     bottom: 40px;
 }
+
+
 
     /* ----------------------------------- Service Page -------------------------------------------------------------*/
 
