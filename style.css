@@ -1948,6 +1948,7 @@ ul li .date-edu {
     width: 100%;
     display: block;
     margin: auto;
+    margin-bottom: -90px;
 }
 
 .content {
@@ -1978,6 +1979,13 @@ ul li .date-edu {
 .content:hover > * {
     transform: translateY(30px);
     transition: transform 0.6s;
+}
+
+@media screen and (max-width: 425px) {
+    .heading-activity {
+        font-size: 30px;
+        margin-bottom: -50px;
+    }
 }
 
 /* ---------------------------------------------- Contact Page --------------------------------------------------------*/
