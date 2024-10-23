@@ -1897,6 +1897,15 @@ ul li .date-edu {
     width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+    .heading-assignment {
+        font-size: 30px;
+        margin-left: -50px;
+        margin-top: 50px;
+        margin-bottom: -70px;
+    }
+}
+
 /*--------------------------------------------Activity Page ------------------------------------------------------------*/
 
 .heading-activity {
