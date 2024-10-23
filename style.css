@@ -507,7 +507,7 @@ span {
     display: inline-block;
     border-radius: 5px;
     background-color: #171616;
-    border: none;
+    border: 2px solid #c79900;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -558,6 +558,15 @@ span {
     right: 0;
 }
 
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
 @media (max-width: 768px) {
     .heading-about h1 {
         font-size: 45px;
@@ -586,11 +595,11 @@ span {
 
     .about-content p {
         font-size: 15px;
-        width: 500px;
+        width: 480px;
         text-align: center;
-        padding-left: 70px;
+        padding-left: 110px;
         padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .about-detail div {
@@ -600,7 +609,62 @@ span {
     }
 
     .button {
-        left: 140px;
+        left: 90px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .heading-about h1 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+        width: 450px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .about-img {
+        max-width: 300px;
+        max-height: 380px;
+        margin-top: 20px;
+    }
+
+    .about-img img {
+        max-width: 200px;
+        max-height: 280px;
+    }
+
+    .about-detail div {
+        margin: 20px;
+        font-size: 13px;
+        padding-left: 7.5rem;
+    }
+
+    .button {
+        left: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+    .about-content p {
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    .about-detail div {
+        font-size: 12px;
+        padding-left: 8.8rem;
+    }
+
+    .button {
+        margin-left: 10px;
     }
 }
 
@@ -709,58 +773,37 @@ span {
 }
 
 @media screen and  (max-width: 750px) {
-    .timeline {
-        margin: 50px auto;
-    }
 
-    .timeline::after {
-        left: 31px;
-    }
-
-    .container {
-        width: 100%;
-
-    }
-
-    .text-box {
-        font-size: 13px;
-        width: 350px;
-    }
-
-    .text-box small {
-        margin-bottom: 10px;
-    }
-
-    .right-container {
-        left: 0;
-    }
-
-    .left-container img, .right-container img {
-        left: 10px;
-        top: 100px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .container-edu {
-        padding: 20px 80px;
-        position: relative;
-        width: 70%;
-        bottom: 30px;
-    }
-
-    .circle-left {
-        visibility: hidden;
-    }
-
-    .circle-right {
-        visibility: hidden;
-    }
 }
 
 @media screen and  (max-width: 800px) {
     .text-box {
     }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
 }
 /* ----------------------------------- Experience Page -------------------------------------------------------------*/
 
