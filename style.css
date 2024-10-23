@@ -836,6 +836,7 @@ span {
     height: auto;
     position: relative;
     bottom: -90px;
+    right: -20px;
 }
 
 .container-edu::after {
@@ -966,7 +967,7 @@ ul li .date-edu {
         width: 100%;
         float: none;
         clear: none;
-        margin-bottom: 80px;
+        margin-bottom: 90px;
     }
 
     .container-edu ul li:nth-child(odd) {
@@ -990,7 +991,7 @@ ul li .date-edu {
 
 @media screen and (max-width: 933px) {
     .container-edu ul li .title-edu {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     ul li p {
