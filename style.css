@@ -35,18 +35,77 @@ body{
     background-color: #000000;
 }
 
-.header {
+header {
     height: 4.5rem;
-    width: 100vw;
-    background-color: #1c1b1b;
+    width: 100%;
+   /* background-color: #1c1b1b;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: fixed;
     top: 0;
-    z-index: 100;
+    right: 0;
+    z-index: 1000;
+    padding: 32px 15%;
+    background-color: #000000;
+    transition: all ease .45s;
 }
+
+.logo {
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+
+.navbar a:hover {
+    color: #c79900;
+}
+
+.navbar a.active {
+    color: #c79900;
+}
+
+.menu-btn {
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*visibility: hidden;*/
+}
+
+.menu-icon {
+    margin-left: 10px;
+    font-size: 28px;
+    z-index: 6;
+}
+
+.menu-btn h5:hover {
+    color: #c79900;
+}
+
+.menu-icon i:hover {
+    color: #c79900;
+}
+
+
+
+/*
 
 .header>nav {
     position: absolute;
@@ -96,6 +155,7 @@ header>nav>ul>li>a:hover {
 header>nav>ul>li>a:active {
     color: #c79900;
 }
+*/
 
 main {
 
@@ -151,8 +211,7 @@ span {
 
 .share {
     position: absolute;
-    bottom: 10rem;
-    margin-left: -120px;
+    bottom: 3rem;
     display: flex;
     align-items: center;
 }
@@ -179,7 +238,7 @@ span {
     box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
 }
 
-@media (max-width: 1850px) {
+@media (max-width: 1440px) {
     header {
         padding: 15px 8%;
         transition: 0.2s;
@@ -188,6 +247,7 @@ span {
     .hero {
         padding: 0 8%;
         transition: 0.2s;
+        background-color: red;
     }
 
     .share {
@@ -196,34 +256,13 @@ span {
     }
 }
 
-@media (max-width: 1370px) {
-    header {
-        padding: 15px 4%;
-        transition: 0.2s;
-    }
-
-    .hero {
-        padding: 0 4%;
-        transition: 0.2s;
-    }
-
-    .share {
-        left: 4%;
-        transition: 0.2s;
-    }
-
-    :root {
-        --h1-font: 50px;
-        --h3-font: 40px;
-        --h4-font: 35px;
-        --p-font: 15px;
-        transition: 0.2s;
-    }
-}
-
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
     .navbar a {
         margin: 0 15px;
+    }
+
+    header {
+        padding: 11px 4%;
     }
 
     :root {
@@ -233,20 +272,57 @@ span {
         --p-font: 15px;
         transition: 0.2s;
     }
+
+    .hero {
+        background-color: green;
+    }
+
+    .home-img img{
+        width: 400px;
+        height: 400px;
+    }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
+    .menu-btn {
+        visibility: visible;
+    }
+
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.04s ease-in-out;
+    }
+
+    .navbar a {
+        display: block;
+        color: #c3c3c3;
+        padding: 0;
+        margin: 0 0 40px 0;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .navbar.open {
+        left: 0;
+    }
+
     .share {
         display: none;
     }
 
     .hero {
         padding: 70px 4%;
-    }
-
-    header {
-        padding: 11px 4%;
-        background: #2d2d2d;
+        background-color: blue;
     }
 
     .home {
@@ -274,7 +350,7 @@ span {
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 425px) {
     .navbar {
         position: absolute;
         width: 100%;
@@ -302,9 +378,13 @@ span {
     .navbar.open {
         left: 0;
     }
+
+    .hero {
+        background-color: deeppink;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
     :root {
         --h1-font: 40px;
         --h3-font: 40px;
@@ -315,6 +395,28 @@ span {
 
     .home-img img {
         width: 400px;
+    }
+
+    .hero {
+        background-color: orangered;
+    }
+}
+
+@media (max-width: 320px) {
+    :root {
+        --h1-font: 40px;
+        --h3-font: 40px;
+        --h4-font: 35px;
+        --p-font: 15px;
+        transition: 0.2s;
+    }
+
+    .home-img img {
+        width: 400px;
+    }
+
+    .hero {
+        background-color: yellow;
     }
 }
 
@@ -1232,6 +1334,11 @@ span {
 
     .heading-service {
         font-size: 3.5rem;
+    }
+
+    .card-service {
+        height: 280px;
+        width: 300px;
     }
 }
 
