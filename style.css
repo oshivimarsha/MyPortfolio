@@ -653,6 +653,10 @@ span {
 }
 
 @media (max-width: 320px) {
+    .heading-about {
+        font-size: 35px;
+    }
+
     .about-content p {
         width: 400px;
         margin-left: 40px;
@@ -1310,17 +1314,20 @@ ul li .date-edu {
     }
 
     .heading-technical-skills {
+        margin-top: 70px;
+        margin-left: 30px;
         font-size: 30px;
     }
 
 
     .technical-progress-bar {
         width: 300px;
+        margin-right: -20px;
     }
 }
 
 
-/*-------------------------------------------------------------------------------------*/
+/*---------------------------------- professional-skills ---------------------------------------------------*/
 
 
 .heading-professional-skills {
@@ -1482,6 +1489,15 @@ ul li .date-edu {
     position: absolute;
     bottom: 40px;
 }
+
+@media (max-width: 425px) {
+    .heading-professional-skills {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+}
+
+
 
 
 
