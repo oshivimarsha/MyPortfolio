@@ -988,6 +988,20 @@ ul li .date-edu {
     }
 }
 
+@media screen and (max-width: 933px) {
+    .container-edu ul li .title-edu {
+        font-size: 25px;
+    }
+
+    ul li p {
+        font-size: 15px;
+    }
+
+    ul li h6 {
+        font-size: 12px;
+    }
+}
+
 /* ----------------------------------- Experience Page -------------------------------------------------------------*/
 
 
