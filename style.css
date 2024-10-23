@@ -989,9 +989,13 @@ ul li .date-edu {
     }
 }
 
-@media screen and (max-width: 933px) {
+@media screen and (max-width: 425px) {
     .container-edu ul li .title-edu {
-        font-size: 22px;
+        font-size: 35px;
+    }
+
+    .heading-edu {
+        font-size: 35px;
     }
 
     ul li p {
@@ -1007,6 +1011,7 @@ ul li .date-edu {
 
 
 .heading-exp {
+    margin-top: 200px;
     text-align: center;
     font-size: 55px;
 }
@@ -1132,11 +1137,11 @@ ul li .date-edu {
 }
 
 .heading-skills {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
     background-color: black;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .heading-technical-skills {
@@ -1296,6 +1301,21 @@ ul li .date-edu {
 @media (max-width: 600px) {
     .technical-progress-bar {
         width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .heading-skills {
+        font-size: 35px;
+    }
+
+    .heading-technical-skills {
+        font-size: 30px;
+    }
+
+
+    .technical-progress-bar {
+        width: 300px;
     }
 }
 
