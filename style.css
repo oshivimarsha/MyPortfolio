@@ -1913,20 +1913,9 @@ ul li .date-edu {
     font-weight: bold;
     text-align: center;
     background-color: black;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
-
-/*.container-activity {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    !*align-items: center;*!
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
-    top: -5px;
-}*/
 
 .container-activity {
     position: relative;
@@ -2011,6 +2000,15 @@ ul li .date-edu {
     margin-bottom: .5em;
 }
 
+.heading-contact {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
 .heading-contact, .sub-heading-contact {
     margin-bottom: .5em;
     font-weight: bold;
@@ -2044,7 +2042,6 @@ ul li .date-edu {
 .input {
     width: 95%;
     max-width: 700px;
-    border: none;
     font-size: .9em;
     padding: 1em;
     outline: none;
@@ -2135,6 +2132,12 @@ ul li .date-edu {
     .contact-method {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .heading-contact {
+        font-size: 35px;
     }
 }
 
