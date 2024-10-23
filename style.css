@@ -1780,6 +1780,27 @@ ul li .date-edu {
     width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+    .heading-my-work {
+        font-size: 35px;
+    }
+
+    .card-detail-main p {
+        margin-left: 15px;
+    }
+
+    .text-center-pro h2 {
+        font-size: 30px;
+        margin-left: -50px;
+        margin-top: 50px;
+    }
+
+    .project-content {
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+}
+
 
 /* ---------------------------------- Assignment Section -------------------------------------------------------------*/
 
