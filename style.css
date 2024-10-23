@@ -1322,7 +1322,7 @@ ul li .date-edu {
 
     .technical-progress-bar {
         width: 300px;
-        margin-right: -20px;
+        margin-right: -10px;
     }
 }
 
@@ -1509,11 +1509,11 @@ ul li .date-edu {
 }
 
 .heading-service {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: -30px;
 }
 
 .container-service {
@@ -1622,6 +1622,20 @@ ul li .date-edu {
     .card-service {
         height: 280px;
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .heading-service {
+        font-size: 35px;
+    }
+
+    .card-service i {
+        margin-top: 5px;
+    }
+
+    .card-service h2 {
+        margin-top: -20px;
     }
 }
 
