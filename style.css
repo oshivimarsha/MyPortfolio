@@ -616,7 +616,7 @@ span {
 
 @media (max-width: 425px) {
     .heading-about h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .about-content p {
@@ -673,7 +673,7 @@ span {
 
 /* ----------------------------------- Education page-------------------------------------------------------------*/
 
-.heading-edu {
+/*.heading-edu {
     text-align: center;
     font-size: 55px;
 }
@@ -777,8 +777,7 @@ span {
 }
 
 @media screen and  (max-width: 800px) {
-    .text-box {
-    }
+
 }
 
 @media (max-width: 1440px) {
@@ -799,12 +798,196 @@ span {
 }
 
 @media (max-width: 375px) {
+    .heading-edu {
+        font-size: 35px;
+    }
 
+    .text-box {
+        padding: 20px 30px;
+        position: relative;
+        border-radius: 20px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 320px) {
 
+}*/
+
+
+.education {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
 }
+
+.heading-edu {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 55px;
+    position: relative;
+}
+
+.container-edu {
+    width: 70%;
+    height: auto;
+    position: relative;
+    bottom: -90px;
+}
+
+.container-edu::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 93%;
+    background-color: #c79900;
+}
+
+.container-edu ul {
+    list-style: none;
+}
+
+.container-edu ul li {
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    z-index: 99;
+    position: relative;
+}
+
+.container-edu ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    text-align: right;
+}
+
+.container-edu ul li:nth-child(odd) .date-edu {
+    right: 20px;
+    letter-spacing: 2px;
+}
+
+.container-edu ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+}
+
+.container-edu ul li:last-child {
+    margin-bottom: 80px;
+}
+
+.container-edu ul li .title-edu {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+ul li p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0;
+    line-height: 23px;
+}
+
+ul li h6 {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 5px 0;
+    line-height: 23px;
+}
+
+ul li .date-edu {
+    position: absolute;
+    top: -35px;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #c79900;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+
+.container-edu ul li .circle-edu {
+    width: 30px;
+    height: 30px;
+    background-color: #c79900;
+    box-shadow: 0 0 10px #c79900, 0 0 30px #c79900;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.container-edu ul li:nth-child(odd) .circle-edu {
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+
+.container-edu ul li:nth-child(even) .circle-edu {
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1224px) {
+    .heading-edu {
+        font-size: 50px;
+    }
+
+    .container-edu {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .heading-edu {
+        font-size: 45px;
+    }
+
+    .container-edu {
+        width: 80%;
+        transform: translateX(15px);
+    }
+
+    .container-edu::after {
+        left: -30px;
+    }
+
+    .container-edu ul li {
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 80px;
+    }
+
+    .container-edu ul li:nth-child(odd) {
+        transform: translateX(0);
+        text-align: left;
+    }
+
+    .container-edu ul li:nth-child(odd) .date-edu {
+        left: 20px;
+    }
+
+    .container-edu ul li:nth-child(odd) .circle-edu {
+        left: -30px;
+        transform: translate(-50%, -50%);
+    }
+
+    .container-edu ul li:nth-child(even) {
+        transform: translateX(0);
+    }
+}
+
 /* ----------------------------------- Experience Page -------------------------------------------------------------*/
 
 
@@ -1968,7 +2151,30 @@ h3 {
 
 
 
+@media (max-width: 1440px) {
 
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
 
 
 
